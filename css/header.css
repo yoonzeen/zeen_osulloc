@@ -1,0 +1,103 @@
+/* ########### header ########## */
+  #header,#mobHeader {width:100%; height:80px; position:fixed;
+	background-color:rgba(255,255,255,0.9); left:0; top:0; margin:0 auto; z-index:10; transition:top .3s ease-in-out; border-bottom:1px solid rgba(150,150,150,0.2);}
+	  #lHeader {width:1008px; margin:0 auto; position:relative; }
+	  #header h1 {width:100px; height:33px; padding:30px 0 17px; position:absolute; left:0; top:0;}
+		#header h1 a {width:100px; height:33px; display:block;}
+		#header h1 img {width:100%; }
+    #header .selected a, #mobHeader .selected a {color:#669966;}
+
+/* ####### mobile ######## */
+	#mobHeader {display:none; transition:all .5s ease-in-out; position:fixed; top:0; left:0;}
+    #mobHeader h1 {width:100%; margin:0 auto;}
+    #mobHeader h1 a {display:block; width:100%; }
+    #mobHeader h1 a img {width:100%;}
+
+  #mobGnb .selected a {color:#669966;}
+
+
+  #mobQuickMenu {position:fixed; z-index:30; right:-50px; top:10px; width:30px; height:30px; cursor:pointer; transition:all .5s ease-in-out;}
+    #mobQuickMenu img {width:100%;}
+
+
+  #mobQuickMenuDesc {width:300px; padding-bottom:1px; position:fixed; right:-1000px; top:0; background-color:#fff; z-index:10; transition:all .3s ease-in-out; outline:1px solid #ccc; }
+    #mobQuickMenuDesc .logoArea {width:98%; padding:20px 1% 0; margin:0 auto; text-align:center;}
+      #mobQuickMenuDesc .logoArea img {width:150px;}
+    #mobQuickMenuDesc .loginArea {width:98%; margin:0 auto; text-align:center; padding:0 1% 30px; }
+      #mobQuickMenuDesc .loginArea a {margin:0 auto; display:inline-block; margin-right:30px; font-size:13px; font-family:"arita_dodum-Medium"; color:#999;}
+
+      #mobQuickMenuDesc p a:last-child {margin-right:0;}
+    #mobMenuGnb {width:98%; padding:0 1%;}
+      #mobMenuGnb li {width:100%; height:50px; line-height:50px; margin-bottom:1px; }
+        #mobMenuGnb li a {font-family:"arita_dodum-Medium"; font-size:13px; display:block; width:100%; color:#666; text-align:center; background-color:#d3ddc3; transition:all .3s ease-in-out;}
+      #mobQuickMenuDesc p a:hover, #mobQuickMenuDesc p a:focus {color:#669966;}
+      #mobMenuGnb li a:hover, #mobMenuGnb li a:focus {background-color:#669966; color:#fff; }
+
+    #mobQuickMenu, #mobGnbWrap, #mobQuickMenuDesc, #mobQuickMenu {display:none; font-family:"arita_dodum-Medium";}
+
+/* ########### mainInfo ########## */
+  #mainInfo{width:300px; height:35px; text-align:right; position:absolute; right:0; top:0;  }
+	#mainInfo li {display:inline; line-height:35px;}
+	  #mainInfo li a {margin-left:20px; font-size:12px; font-family:"arita_dodum-Thin"; color:#669966;}
+	  #mainInfo li #lang {width:58px; height:35px; border:none; background:none; margin-left:10px;
+	  font-family:"arita_dodum-Thin"; color:#669966; vertical-align:middle; font-size:12px;}
+
+
+
+/* ########### gnb ########## */
+	#gnbWrap {width:608px; height:45px; padding-top:35px; margin:0 auto; }
+		#gnb {width:503px; height:45px; margin:0 auto; }
+			#gnb li {float:left; margin:0 15px; line-height:33px;}
+			  #gnb li a {display:block; padding:5px 10px; font-size:14px; font-family:"arita_dodum-Medium";}
+			#gnb li.selSite a {color:#669966;}
+
+
+
+/* ########### mainInfo 기능 ########## */
+	#mainInfo li a:hover, #mainInfo li a:focus {color:#333;}
+
+/* ########### gnb 기능 ################ */
+	#gnb li a:hover {background-image:url("img/brush.png"); background-size:100%; }
+
+
+/* ########## 스마트폰 세로 버전 ####### */
+    @media all and (min-width:320px) and (max-width:480px) {
+        #header {display:none; }
+		#mobHeader {display:block;}
+        #mobHeader h1 {width:100%; height:50px; position:static; padding:0 0; margin:0 auto; }
+          #mobHeader h1 a {width:60px; margin:0 auto;   padding-top:5px;}
+
+	 #mobQuickMenu, #mobGnbWrap, #mobQuickMenuDesc, #mobQuickMenu {display:block;}
+        #mobGnbWrap {width:100%; height:30px;}
+          #mobGnb {width:100%; text-align:center; }
+            #mobGnb li {display:inline;}
+              #mobGnb li a {padding:0 5px; font-size:13px; }
+		}
+
+/* ########## 스마트폰 가로 버전 ####### */
+      @media all and (min-width:481px) and (max-width:767px) {
+		#header {display:none; }
+		#mobHeader {display:block;}
+        #mobHeader h1 {width:100%; height:50px; position:static; padding:0; margin:0 auto; }
+          #mobHeader h1 a {width:60px; margin:0 auto; padding-top:5px;}
+
+
+	#mobQuickMenu, #mobGnbWrap, #mobQuickMenuDesc, #mobQuickMenu {display:block;}
+        #mobGnbWrap {width:100%; height:30px;}
+          #mobGnb {width:100%; text-align:center; }
+            #mobGnb li {display:inline;}
+              #mobGnb li a {padding:0 5px; font-size:13px; }
+
+		}
+
+ /* ##### 태블릿 ##### */
+  @media all and (min-width:768px) and (max-width:1024px) {
+    #lHeader {width:700px; height:80px; }
+      #header h1 {position:absolute; left:0; top:0;}
+	  #lang {display:none;}
+    #mainInfo {width:200px; right:0; }
+      #mainInfo li a {padding:0 5px; font-size:11px;}
+    #gnbWrap {width:500px; margin-left:130px; }
+      #gnb li a {font-size:13px; padding:5px 0 5px 10px;}
+
+	}

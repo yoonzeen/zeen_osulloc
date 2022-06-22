@@ -1,0 +1,40 @@
+@font-face {
+  font-family:"arita_dodum-Bold";
+  src:url("fonts/arita_dodum-Bold.woff");
+}
+@font-face {
+  font-family:"arita_dodum-Light";
+  src:url("fonts/arita_dodum-Light.woff");
+}
+@font-face {
+  font-family:"arita_dodum-Medium";
+  src:url("fonts/arita_dodum-Medium.woff");
+}
+@font-face {
+  font-family:"arita_dodum-SemiBold";
+  src:url("fonts/arita_dodum-SemiBold.woff");
+}
+@font-face {
+  font-family:"arita_dodum-Thin";
+  src:url("fonts/arita_dodum-Thin.woff");
+}
+@font-face {
+  font-family:"arita-buriB";
+  src:url("fonts/arita-buriB.woff");
+}
+@font-face {
+  font-family:"arita-buriHL";
+  src:url("fonts/arita-buriHL.woff");
+}
+@font-face {
+  font-family:"arita-buriL";
+  src:url("fonts/arita-buriL.woff");
+}
+@font-face {
+  font-family:"arita-buriM";
+  src:url("fonts/arita-buriM.woff");
+}
+@font-face {
+  font-family:"arita-buriSB";
+  src:url("fonts/arita-buriSB.woff");
+}

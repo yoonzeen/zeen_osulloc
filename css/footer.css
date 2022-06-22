@@ -1,0 +1,53 @@
+/* ########### footer ########## */
+	#footerWrap {width:100%; margin:0 auto; clear:both; background-color:#eee; }
+	  #footer {width:1008px; overflow:hidden; margin:0 auto; }
+		#footer div {width:50%; float:left; margin:0 auto; }
+		  #footer .leftWrap .img {width:90px; margin:0 auto; padding:90px 0; }
+			#footer .leftWrap .img a {display:block; width:100%; }
+			#footer .leftWrap .img img {width:100%;}
+		  #footer .rightWrap {width:50%; padding-top:35px; position:relative; }
+		  #footer .rightWrap ul {width:100%; padding-bottom:10px; }
+			#footer .rightWrap li {display:inline-block; font-weight:100;}
+			  #footer .rightWrap li a {padding-right:5px;; font-size:13px; color:#666; font-family:"arita_dodum-Medium";}
+			  #footer .copy {width:98%; height:125px; font-family:"arita_dodum-Medium"; border-top:1px solid #7d8e82;
+			  padding-top:10px;  font-weight:100; line-height:20px; font-size:11px; font-style:normal; color:#666;}
+				#footer .copy b {line-height:30px; font-weight:400; font-family:"arita_dodum-SemiBold";}
+
+		  #footer .sns {width:80px; height:40px; position:absolute; right:50px; bottom:0; }
+			#footer .sns a img {width:40%; }
+
+
+			#footer .rightWrap li a:hover, #footer .rightWrap li a:focus {color:#669966;}
+
+ /* ########## 스마트폰 세로 버전 ####### */
+      @media all and (min-width:320px) and (max-width:480px) {
+		#footer {width:300px; }
+			#footer div {width:100%; float:none;}
+				#footer .leftWrap .img {padding-bottom:10px; }
+			#footer .rightWrap {width:90%; text-align:center;}
+				#footer .rightWrap li a {display:inline-block;}
+				#footer .rightWrap .copy {text-align:left; padding-bottom:80px; }
+					#footer .rightWrap .copy b {display:block; padding-top:10px; line-height:16px; }
+			#footer .sns {bottom:15px; }
+
+
+	  }
+
+/* ########## 스마트폰 가로 버전 ####### */
+  @media all and (min-width:481px) and (max-width:767px) {
+	#footer {width:300px; }
+		#footer div {width:100%; float:none;}
+			#footer .leftWrap .img {padding-bottom:10px; }
+		#footer .rightWrap {width:90%; text-align:center;}
+			#footer .rightWrap li a {display:inline-block;}
+			#footer .rightWrap .copy {text-align:left; padding-bottom:80px; }
+				#footer .rightWrap .copy b {display:block; padding-top:10px; line-height:16px; }
+		#footer .sns {bottom:15px; }
+
+  }
+/* ##### 태블릿 ##### */
+  @media all and (min-width:768px) and (max-width:1024px) {
+	#footer {width:700px;}
+        #footer .leftWrap {width:30%;}
+        #footer .rightWrap {width:70%;}
+  }

@@ -1,0 +1,28 @@
+/* ############# 초기화 ############### */
+	* {margin:0; padding:0;}
+	body, header, nav, section, article, aside, div, footer {margin:0; padding:0;}
+	header, nav, section, article, aside, footer {display:block;}
+	li {list-style-type:none;}
+	a:link, a:visited {text-decoration:none; color:#333;}
+	a:hover, a:focus {color:#93ba93;}
+	h2 {position:absolute; left:-9999px; width:1px; height:1px; font-size:1px; line-height:0; overflow:hidden;}
+	img {border:none;}
+	/* width */
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: #f1f1f1; 
+	}
+	 
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: #a6bfa6; 
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background:#60968c; 
+	}
